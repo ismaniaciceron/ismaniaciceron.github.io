@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Bandejas - Detallitos de Amor</title>
+  <link rel="stylesheet" href="bandejas.css">
+  <script src="js/scripts.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Detallitos de Amor</h1>
+    <div class="barra-busqueda">
+      <input type="text" id="busqueda" placeholder="Buscar bandejas...">
+    </div>
+    <div id="carrito">
+      <img src="img/carrito.png" alt="Carrito" class="icono-carrito">
+      <span id="contador">0</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="catalogo">
+      <div class="card">
+        <img src="img/bandeja1.jpg" alt="Bandeja 1">
+        <h3>Bandeja Flores 💐</h3>
+        <p>⭐⭐⭐⭐⭐</p>
+        <p>Precio: $250</p>
+        <button onclick="agregarAlCarrito('Bandeja Flores', 250)">Agregar</button>
+      </div>
+
+      <div class="card">
+        <img src="img/bandeja2.jpg" alt="Bandeja 2">
+        <h3>Bandeja de Té 🍵</h3>
+        <p>⭐⭐⭐⭐</p>
+        <p>Precio: $200</p>
+        <button onclick="agregarAlCarrito('Bandeja de Té', 200)">Agregar</button>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,150 @@
+/* ======= HEADER ======= */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 15px 30px;
+  border-bottom: 2px solid #ffe0e9;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #ff4d6d;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* ======= MENÚ ======= */
+.nav .menu {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav .menu li a {
+  text-decoration: none;
+  color: #d6336c;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.nav .menu li a:hover {
+  background-color: #ffccd5;
+}
+
+/* ======= SECCIÓN VISIÓN, MISIÓN Y VALORES ======= */
+.valores-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 50px 20px;
+  background-color: #fff5f7;
+}
+
+.tarjeta {
+  background-color: #ffe0e9;
+  border-left: 8px solid #ff4d6d;
+  border-radius: 20px;
+  padding: 25px 30px;
+  max-width: 800px;
+  width: 100%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.tarjeta:hover {
+  transform: scale(1.02);
+}
+
+.tarjeta h2 {
+  font-size: 28px;
+  color: #d6336c;
+  margin-bottom: 15px;
+}
+
+.tarjeta p, .tarjeta ul {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.tarjeta ul {
+  padding-left: 20px;
+}
+
+.tarjeta li {
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+.valores-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 50px 20px;
+  background-color: #fff5f7;
+}
+
+.tarjeta {
+  background-color: #ffe0e9;
+  border-left: 8px solid #ff4d6d;
+  border-radius: 20px;
+  padding: 25px 30px;
+  max-width: 800px;
+  width: 100%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.tarjeta:hover {
+  transform: scale(1.02);
+}
+
+.tarjeta h2 {
+  font-size: 28px;
+  color: #d6336c;
+  margin-bottom: 15px;
+}
+
+.tarjeta p, .tarjeta ul {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.tarjeta ul {
+  padding-left: 20px;
+}
+
+.tarjeta li {
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+

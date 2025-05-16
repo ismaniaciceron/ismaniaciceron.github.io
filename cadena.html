@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo - Detallitos de Amor</title>
+  <link rel="stylesheet" href="cadena.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">
+      <img src="Logo.jpeg" alt="Logo">
+      <span>Detallitos de Amor</span>
+    </div>
+    <nav class="nav">
+      <ul class="menu">
+        <li><a href="inicio.html">Inicio</a></li>
+        <li><a href="quienes somos.html">Quienes Somos</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="ubicacion.html">Ubicación</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <a href="." class="cart-icon">
+          | 🛒  <section id="carrito"></section>
+        </a>
+      </ul>
+    </nav>
+  </header>
+
+  <h1 class="titulo">Catálogo de Productos</h1>
+
+  <section class="catalogo">
+    <!-- Producto 1 -->
+    <div class="producto">
+      <img src="img1.jpg" alt="Producto 1">
+      <h3>Ramo de Rosas</h3>
+      <p>$20.00</p>
+      <button onclick="agregarAlCarrito('Ramo de Rosas', 20)">Agregar</button>
+    </div>
+
+    <!-- Producto 2 -->
+    <div class="producto">
+      <img src="img2.jpg" alt="Producto 2">
+      <h3>Bandeja Dulce</h3>
+      <p>$25.00</p>
+      <button onclick="agregarAlCarrito('Bandeja Dulce', 25)">Agregar</button>
+    </div>
+
+    <!-- Producto 3 -->
+    <div class="producto">
+      <img src="img3.jpg" alt="Producto 3">
+      <h3>Llaveros Personalizados</h3>
+      <p>$8.00</p>
+      <button onclick="agregarAlCarrito('Llaveros', 8)">Agregar</button>
+    </div>
+
+    <!-- Producto 4 -->
+    <div class="producto">
+      <img src="img4.jpg" alt="Producto 4">
+      <h3>Peluches con Corazón</h3>
+      <p>$15.00</p>
+      <button onclick="agregarAlCarrito('Peluches', 15)">Agregar</button>
+    </div>
+
+    <!-- Producto 5 -->
+    <div class="producto">
+      <img src="img5.jpg" alt="Producto 5">
+      <h3>Cuadro para Pareja</h3>
+      <p>$18.00</p>
+      <button onclick="agregarAlCarrito('Cuadro de Pareja', 18)">Agregar</button>
+    </div>
+
+    <!-- Producto 6 -->
+    <div class="producto">
+      <img src="img6.jpg" alt="Producto 6">
+      <h3>Tarjetas Amorosas</h3>
+      <p>$5.00</p>
+      <button onclick="agregarAlCarrito('Tarjetas', 5)">Agregar</button>
+    </div>
+
+    <!-- Producto 7 -->
+    <div class="producto">
+      <img src="img7.jpg" alt="Producto 7">
+      <h3>Flores Artesanales</h3>
+      <p>$10.00</p>
+      <button onclick="agregarAlCarrito('Flores Artesanales', 10)">Agregar</button>
+    </div>
+
+    <!-- Producto 8 -->
+    <div class="producto">
+      <img src="img8.jpg" alt="Producto 8">
+      <h3>Kit de Amor</h3>
+      <p>$30.00</p>
+      <button onclick="agregarAlCarrito('Kit de Amor', 30)">Agregar</button>
+    </div>
+  </section>
+
+  <section id="carrito"></section>
+
+  <footer>
+    <p>© 2025 Detallitos de Amor. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

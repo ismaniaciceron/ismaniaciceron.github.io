@@ -1,0 +1,316 @@
+/* Contenedor principal del header */
+header.header {
+  background-color: #febdc6;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* separa logo a la izquierda y menú a la derecha */
+  padding: 0.8rem 1.5rem;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Logo y texto pequeños y alineados a la izquierda */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: bold;
+  font-size: 1rem; /* más pequeño */
+  color: #8b2b40;
+  cursor: pointer;
+}
+
+.logo img {
+  width: 40px;  /* tamaño pequeño para el logo */
+  height: auto;
+}
+
+/* Navegación alineada a la derecha */
+nav.menu-principal {
+  position: relative;
+}
+
+/* Lista de menú principal */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* Items del menú */
+nav ul li {
+  position: relative;
+}
+
+/* Links principales */
+nav ul li a {
+  text-decoration: none;
+  color: #8b2b40;
+  font-weight: 600;
+  padding: 0.5rem 0;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #5a1825;
+}
+
+/* Submenu */
+.submenu-items {
+  position: absolute;
+  top: 110%; /* separa el submenu del link padre */
+  left: 0;
+  background-color: #febdc6;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 3px 8px rgba(139, 43, 64, 0.3);
+  display: none;
+  flex-direction: column;
+  min-width: 180px;
+  z-index: 10;
+  padding-top: 0.4rem;
+}
+
+/* Items dentro del submenu */
+.submenu-items li {
+  padding: 0.4rem 1rem;
+}
+
+.submenu-items li a {
+  color: #8b2b40;
+  font-weight: 500;
+  padding: 0.3rem 0;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.submenu-items li a:hover {
+  background-color: #fbd6dc;
+  color: #5a1825;
+  border-radius: 4px;
+}
+
+/* Mostrar submenu en hover */
+nav ul li:hover > .submenu-items {
+  display: flex;
+}
+
+/* Estilos para menú hamburguesa móvil (opcional) */
+.menu-toggle {
+  display: none; /* oculto por defecto */
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #8b2b40;
+}
+
+/* Responsive: menú hamburguesa visible en móviles */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    background-color: #febdc6;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 200px;
+    display: none;
+    border-radius: 0 0 8px 8px;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  nav ul li:hover > .submenu-items {
+    display: none; /* submenu no aparece en hover móvil */
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+
+
+footer {
+  background-color: #febdc6;       /* Fondo rosado */
+  color: #8b2b40;                  /* Texto marrón oscuro */
+  text-align: center;              /* Centrar texto */
+  padding: 1rem 0;                 /* Espacio arriba y abajo */
+  font-family: 'Arial', sans-serif;
+  font-size: 1rem;
+  border-top: 3px solid #8b2b40;  /* Línea superior */
+  
+  position: fixed;                 /* Fijo en pantalla */
+  bottom: 0;                      /* Abajo */
+  left: 0;
+  width: 100%;
+  box-shadow: 0 -2px 5px rgba(139,43,64,0.3); /* Sombra sutil arriba */
+  z-index: 1000;                  /* Que esté encima */
+}
+  
+/* Para que el contenido principal no quede tapado */
+main {
+  padding-bottom: 60px; /* altura del footer + un poco */
+}
+
+
+
+/* General */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff0f3;
+  color: #8b2b40;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #febdc6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 1.5rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #8b2b40;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+}
+
+/* Carrusel */
+.carrusel {
+  position: relative;
+  max-width: 700px;
+  margin: 2rem auto;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(139,43,64,0.3);
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+.carrusel button {
+  position: absolute;
+  top: 50%;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 2rem;
+  color: #8b2b40;
+  cursor: pointer;
+  user-select: none;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+
+.carrusel .prev {
+  left: 10px;
+}
+
+.carrusel .next {
+  right: 10px;
+}
+
+/* Audio y video */
+.audio-section,
+.video-section {
+  max-width: 700px;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+audio, video {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(139,43,64,0.3);
+  outline: none;
+}
+
+footer {
+  background-color: #febdc6;    /* Fondo rosado */
+  text-align: center;           /* Texto centrado */
+  padding: 1rem 0;              /* Espacio arriba y abajo */
+  font-family: 'Arial', sans-serif;
+  color: #8b2b40;               /* Color de texto marrón oscuro */
+  font-size: 0.9rem;
+  border-top: 2px solid #8b2b40; /* Línea superior para separar */
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+
+
+
+.titulo {
+  text-align: center;
+  margin: 30px;
+  color: #d6336c;
+  font-size: 28px;
+}
+
+.catalogo {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  padding: 30px;
+  justify-items: center;
+}
+
+.producto {
+  background-color: #ffe4ec;
+  border-radius: 15px;
+  padding: 15px;
+  text-align: center;
+  width: 200px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.producto img {
+  width: 100%;
+  border-radius: 10px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.producto h3 {
+  margin: 10px 0 5px;
+  color: #d6336c;
+}
+
+.ver-mas {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 8px 12px;
+  background-color: #ff4d6d;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.ver-mas:hover {
+  background-color: #e6395a;
+}
